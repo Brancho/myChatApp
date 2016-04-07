@@ -1,0 +1,11 @@
+<h2>Channels</h2>
+<ul>
+  <li ng-repeat="channel in channels"><a ui-sref="chat-show({ handle: channel.handle })">{{ channel.name }}</a></li>
+</ul>
+
+<h2>Direct Messages</h2>
+<ul>
+  <li ng-repeat="user in activeUsers"><a ui-sref="chat-private({ id: user.id })">{{ user.full_name }}</a></li>
+</ul>
+
+

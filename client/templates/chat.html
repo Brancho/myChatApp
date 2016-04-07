@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="messages-container">
+    <ul class="media-list">
+      <li ng-repeat="message in messages" class="media">
+        <div class="media-left">
+          <a href="#"> <img class="media-object" src="http://placeholdit.imgix.net/~text?txtsize=10&txt={{message.user.initials}}&w=36&h=36"></a>
+        </div>
+        <div class="media-body"><h4 class="media-heading">{{message.user.full_name}}</h4>
+          <p>{{ message.message }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="new-message-container">
+    <form ng-submit="sendMessage()">
+    <div class="input-group">
+      <span class="input-group-addon">+</span>
+      <input ng-model="message"  class="form-control">
+    </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+@import "../vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "angular-toastr";
+
+
+h2 {
+  font-size: 20px;
+  color: #ab9ba9;
+}
+li {
+  font-size: 17px;
+  list-style-type: none;
+}
+a {
+  color: #ab9ba9;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.messages-container {
+  padding-top: 40px;
+}
+.input-group {
+  margin-bottom: 20px;
+
+}
+
+.sidebar{
+  background-color: #4D394B;
+  height: 100vh;
+
+}
+
+.main-container{
+  height: 100%;
+}
+
+.new-message-container{
+  position: fixed;
+  bottom: 0px;
+}
+
+.messages-container{
+  height: 100vh;
+  overflow: scroll;
+}
